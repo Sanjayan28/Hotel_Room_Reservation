@@ -1,0 +1,19 @@
+.home-banner-btn {
+    /* background-color: #f7c300; */
+    background: transparent;
+    border: 2px solid #F6DB14;
+    color: #F6DB14;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    /* border: none; */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .home-banner-btn:hover {
+    background-color: #e0a800;
+    color: #fff;
+    border: none;
+  }
