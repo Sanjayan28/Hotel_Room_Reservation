@@ -1,0 +1,16 @@
+.Heading{
+   padding: 60px;
+   color: #0057B8;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   font-size: 40px;
+}
+.paragrapgh{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+

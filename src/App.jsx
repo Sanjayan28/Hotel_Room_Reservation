@@ -5,19 +5,21 @@ import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import ContactUs from "./Pages/ContactUs/ContactUs";
 import Footer from "./Components/Footer/Footer";
+import Room from "./Pages/Room/Room";
 
 const App = () => {
   return (
     <>
-    <div className="app">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<ContactUs />} />
-      </Routes>
-    </div>
-    <Footer/>
+      <div className="app">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/room" element={<Room/>} />
+        </Routes>
+      </div>
+      <Footer />
     </>
   );
 };
