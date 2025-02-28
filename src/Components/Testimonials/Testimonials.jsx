@@ -1,6 +1,10 @@
 import React, { useRef } from "react";
 import "./Testimonials.css";
 import { assets } from "../../assets/assets";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faStar
+  } from "@fortawesome/free-solid-svg-icons";
 
 const Testimonials = () => {
   const slider = useRef();
@@ -54,6 +58,14 @@ const Testimonials = () => {
                 The staff were so welcoming, and the rooms were incredibly
                 luxurious. I can’t wait to come back!
               </p>
+              <div className="testimonial-rating">
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                </div>
+              <button className="read-more">Read More</button>
             </div>
           </li>
           <li>
@@ -70,6 +82,14 @@ const Testimonials = () => {
                 The staff were so welcoming, and the rooms were incredibly
                 luxurious. I can’t wait to come back!
               </p>
+              <div className="testimonial-rating">
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                </div>
+              <button className="read-more">Read More</button>
             </div>
           </li>
           <li>
@@ -86,6 +106,14 @@ const Testimonials = () => {
                 The staff were so welcoming, and the rooms were incredibly
                 luxurious. I can’t wait to come back!"
               </p>
+              <div className="testimonial-rating">
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                </div>
+              <button className="read-more">Read More</button>
             </div>
           </li>
           <li>
@@ -102,6 +130,14 @@ const Testimonials = () => {
                 The staff were so welcoming, and the rooms were incredibly
                 luxurious. I can’t wait to come back!"
               </p>
+              <div className="testimonial-rating">
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                  <FontAwesomeIcon icon={faStar} />
+                </div>
+              <button className="read-more">Read More</button>
             </div>
           </li>
         </ul>

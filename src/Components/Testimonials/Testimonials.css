@@ -5,7 +5,7 @@
     margin: 10px auto;
     padding: 40px 80px;
     position: relative;
-    max-width: 1200px;
+    max-width: 1300px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
@@ -64,6 +64,7 @@
     background: #FAF7F5;
     box-shadow: 2px 4px 8px rgba(74, 73, 73, 0.5);
     transition: transform 0.3s;
+    text-align: center;
 }
 .slide:hover {
     transform: scale(1.05);
@@ -84,8 +85,22 @@
 .user-info h3 {
     color: #0E3B66;
 }
-p{
-    color: #0E3B66;
-    align-items: center;
-    justify-content: center;
-}
+.testimonial-rating {
+    font-size: 1.2em;
+    color: #ff9800;
+    margin: 13px 0;
+  }
+.read-more {
+    color: #0d3b66;
+    border: 2px solid #0d3b66;
+    padding: 6px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight:200;
+  }
+
+  .read-more:hover{
+    color: #fff;
+    background: #0d3b66;
+  }
