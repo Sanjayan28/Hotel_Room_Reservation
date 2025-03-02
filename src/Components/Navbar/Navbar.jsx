@@ -1,10 +1,15 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("Home");
+  const navigate = useNavigate();
+
+  const handleLoginClick = () => {
+    navigate("/login");
+  };
 
   return (
     <div className="navbar">
@@ -36,7 +41,10 @@ const Navbar = () => {
         </li>
       </ul>
       <div>
-        <button>Log In</button>
+        <Link to="/login">
+          <button>Log In</button>
+          {/* <button onClick={handleLoginClick}>Log In</button> */}
+        </Link>
       </div>
     </div>
   );
