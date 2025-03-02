@@ -1,14 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./register.css";
 
 const Register = () => {
+  const navigate = useNavigate();
+
+  const handleRegister = (e) => {
+    e.preventDefault();
+    navigate("/");
+  };
+
   return (
     <div className="register-container">
       <div className="register-box">
         <h1 className="Heading">Register</h1>
-        {/* <h2>Register</h2> */}
-        <form className="register-form">
+        <form className="register-form" onSubmit={handleRegister}>
           <label htmlFor="name">Name</label>
           <input
             type="text"
@@ -33,14 +39,14 @@ const Register = () => {
             placeholder="Confirm your password"
             className="input-field"
           />
-          <Link to="/home">
-            <button className="register-button">Register</button>
-          </Link>
+          <button type="submit" className="register-button">
+            Register
+          </button>
           <p className="login-link">
             Already have an account?{" "}
-            <Link to="/login" className="login-text">
+            <a href="/login" className="login-text">
               Login here
-            </Link>
+            </a>
           </p>
         </form>
       </div>

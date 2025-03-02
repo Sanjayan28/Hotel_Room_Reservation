@@ -1,27 +1,44 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import "./LogIn.css";
 
 const LogIn = () => {
-  const navigate = useNavigate(); // Use the hook to navigate programmatically
+  const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Perform login logic here (optional)
-    // After login, navigate to the home screen
     navigate("/");
   };
 
   return (
-    <div className="login-screen">
-      <h2>Log In</h2>
-      {/* Example of a login form (simplified) */}
-      <div className="login-form">
-        <input type="text" placeholder="Username" />
-        <input type="password" placeholder="Password" />
-        <button onClick={handleLogin}>Log In</button>
-      </div>
-      <div>
-        {/* Link to navigate to Register screen */}
-        <p>Don't have an account? <Link to="/register">Register here</Link></p>
+    <div className="login-container">
+      <div className="login-box">
+        <h1 className="Heading">Log In</h1>
+        {/* <h2>Register</h2> */}
+        <form className="login-form">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            className="input-field"
+          />
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            placeholder="Enter your password"
+            className="input-field"
+          />
+          <p className="forgot-text">Forgot Password ?</p>
+          <button onClick={handleLogin} className="login-button">
+            Log In
+          </button>
+
+          <p className="register-link">
+            Don't have an account?{" "}
+            <Link to="/register" className="register-text">
+              Register here
+            </Link>
+          </p>
+        </form>
       </div>
     </div>
   );

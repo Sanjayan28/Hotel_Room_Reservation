@@ -9,6 +9,7 @@ import Footer from "./Components/Footer/Footer";
 import Room from "./Pages/Room/Room";
 import LogIn from "./Pages/LogIn/LogIn";
 import Register from "./Pages/Register/Register";
+import DeluxeSingleRoom from "./Pages/RoomDetails/DeluxeSingleRoom/DeluxeSingleRoom";
 
 const App = () => {
   return (
@@ -21,7 +22,8 @@ const App = () => {
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/room" element={<Room />} />
           <Route path="/login" element={<LogIn />} />
-          <Route path="/Register" element={<Register />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/rooms/deluxe-single-room" element={<DeluxeSingleRoom />} />
         </Routes>
       </div>
       <Footer />

@@ -1,15 +1,17 @@
 import React from "react";
 import Header from "../../Components/Header/Header";
 import "./About.css";
+import { assets } from "../../assets/assets";
 
 const About = () => {
   return (
     <div>
-      <Header />
+      <Header
+      bannerImage={assets.AboutBanner}
+      heading="Welcome to Thamel Boutique Hotel"
+      description="Learn more about our story and values." />
       <div>
-        <h1 className="Heading">
-        About Us
-        </h1>
+        <h1 className="Heading">About Us</h1>
       </div>
       <div className="paragrapgh">
         <p className="para">
