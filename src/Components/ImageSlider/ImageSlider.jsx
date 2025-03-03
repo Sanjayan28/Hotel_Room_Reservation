@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./ImageSlider.css";
 
-// Import images from assets folder
+
 import { assets } from "../../assets/assets";
 import { assets1 } from "../../assets/assets1";
 

@@ -6,7 +6,7 @@ const Btn = ({roomPath}) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(roomPath); // Navigate to the provided room path
+    navigate(roomPath);
   };
   return (
     <div><button className="home-banner-btn" onClick={handleClick}>

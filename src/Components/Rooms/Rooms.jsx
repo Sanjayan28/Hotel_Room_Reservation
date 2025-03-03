@@ -15,12 +15,12 @@ const Rooms = () => {
           <div className="room-features">
             <div className="feature">
               <FontAwesomeIcon icon={faBed} className="icon1" />
-              {/* <img src={assets.bed} alt="" className="icon" /> */}
+
               <h3>1 Queen Size Bed</h3>
             </div>
             <div className="feature">
               <FontAwesomeIcon icon={faUsers} className="icon1" />
-              {/* <img src={assets.users} alt="" className="icon" /> */}
+
               <h3>2 Guests</h3>
             </div>
           </div>

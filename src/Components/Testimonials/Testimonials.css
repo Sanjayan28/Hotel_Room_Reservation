@@ -1,5 +1,5 @@
 .testimonials {
-    /* background: linear-gradient(to right, #212EA0, #151B6C); */
+    
     background: #0E3B66;
     color: #fff;
     margin: 10px auto;
@@ -58,7 +58,7 @@
     padding: 20px;
 }
 .slide {
-    /* border: 1px solid #212EA0; */
+   
     padding: 40px;
     border-radius: 10px;
     background: #FAF7F5;
