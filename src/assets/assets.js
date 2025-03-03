@@ -14,6 +14,8 @@ import HomeBanner from "./HomeBanner.jpg";
 import AboutBanner from "./AboutBanner.jpeg";
 import Contactbanner from "./Contactbanner.jpeg";
 import RoomsBanner from "./RoomsBanner.jpeg";
+import S1 from "./S1.jpg";
+import S2 from "./S2.jpg";
 
 import back from "./back-icon.png";
 import next from "./next-icon.png";
@@ -37,4 +39,6 @@ export const assets = {
   Contactbanner,
   RoomsBanner,
   AboutBanner,
+  S1,
+  S2,
 };
